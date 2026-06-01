@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_soc.sv",
+  "InstLine" : 3,
+  "InstName" : "sha256_soc",
+  "ModuleFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_soc.sv",
+  "ModuleLine" : 3,
+  "ModuleName" : "sha256_soc",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_soc.sv",
+    "InstLine" : 20,
+    "InstName" : "u_rx",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/uart_rx.sv",
+    "ModuleLine" : 3,
+    "ModuleName" : "uart_rx"
+   },
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_soc.sv",
+    "InstLine" : 25,
+    "InstName" : "u_tx",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/uart_tx.sv",
+    "ModuleLine" : 3,
+    "ModuleName" : "uart_tx"
+   },
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_soc.sv",
+    "InstLine" : 30,
+    "InstName" : "u_sha256",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.11.03_Education_x64/IDE/bin/Documents/core256/src/sha256_core.sv",
+    "ModuleLine" : 3,
+    "ModuleName" : "sha256_core"
+   }
+  ]
+ }
+]

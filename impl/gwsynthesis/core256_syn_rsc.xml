@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="sha256_soc" Register="790" Lut="294" T_Register="1868(790)" T_Alu="704(0)" T_Lut="2023(294)">
+ <SubModule name="u_rx" Register="22" Lut="44" T_Register="22(22)" T_Lut="44(44)"/>
+ <SubModule name="u_tx" Register="23" Lut="33" T_Register="23(23)" T_Lut="33(33)"/>
+ <SubModule name="u_sha256" Register="1033" Alu="704" Lut="1652" T_Register="1033(1033)" T_Alu="704(704)" T_Lut="1652(1652)"/>
+</Module>

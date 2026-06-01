@@ -1,0 +1,41 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_core.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_soc.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv'
+Compiling module 'sha256_soc'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_soc.sv":3)
+Compiling module 'uart_rx'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv":3)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv":32)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv":38)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv":39)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_rx.sv":44)
+Compiling module 'uart_tx'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv":3)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv":34)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv":41)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv":42)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\uart_tx.sv":47)
+Compiling module 'sha256_core'("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_core.sv":3)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_core.sv":81)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_soc.sv":74)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\src\sha256_soc.sv":93)
+NOTE  (EX0101) : Current top module is "sha256_soc"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\impl\gwsynthesis\core256.vg" completed
+[100%] Generate report file "C:\Gowin\Gowin_V1.9.11.03_Education_x64\IDE\bin\Documents\core256\impl\gwsynthesis\core256_syn.rpt.html" completed
+GowinSynthesis finish
