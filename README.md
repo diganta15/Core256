@@ -1,6 +1,6 @@
-# NanoHash-256: Hardware Cryptography SoC
+# Core256: Hardware Cryptographic Coprocessor
 
-> A lightweight, fully synthesizable SHA-256 hardware accelerator written in SystemVerilog, integrated into a custom System-on-Chip (SoC) for the Gowin Tang Nano 9K FPGA.
+> A lightweight, fully synthesizable SHA-256 hardware accelerator written in SystemVerilog for the Gowin Tang Nano 9K FPGA.
 
 This project demonstrates hardware-software co-design by using a Python host driver to stream pre-padded data blocks over UART to the FPGA, calculating the hash entirely in silicon, and returning the 256-bit digest.
 
@@ -19,18 +19,22 @@ This project demonstrates hardware-software co-design by using a Python host dri
 
 ```text
 NanoHash-256/
-├── rtl/
-│   ├── sha256_core.sv      # The core mathematical hash engine
-│   ├── sha256_soc.sv       # Top-level wrapper tying UART and Core together
-│   ├── uart_rx.sv          # Serial receiver (115200 baud)
-│   └── uart_tx.sv          # Serial transmitter (115200 baud)
-├── constraints/
-│   └── tang_nano_9k.cst    # Physical pin mappings for the FPGA
-├── python/
-│   ├── host_driver.py      # Standard Python driver for hashing strings
-│   └── benchmark_driver.py # High-speed payload generator and throughput tester
-└── tb/
-    └── tb_sha256.cpp       # Cycle-accurate Verilator C++ testbench
+├── src/                        # RTL source files
+│   ├── sha256_core.sv          # The core mathematical hash engine
+│   ├── sha256_soc.sv           # Top-level wrapper tying UART and Core together
+│   ├── uart_rx.sv              # Serial receiver (115200 baud)
+│   └── uart_tx.sv              # Serial transmitter (115200 baud)
+├── tb/                         # Testbench
+│   └── tb_sha256.cpp           # Cycle-accurate Verilator C++ testbench
+├── impl/                       # Gowin EDA implementation output
+├── obj_dir/                    # Verilator build artifacts
+├── benchmark_driver.py         # High-speed payload generator and throughput tester
+├── host_driver.py              # Standard Python driver for hashing strings
+├── core256.gprj                # Gowin EDA project file
+├── core256.gprj.user           # Gowin EDA user project settings
+├── sha256_trace.vcd            # Waveform dump from simulation
+├── Makefile                    # Build automation for Verilator simulation
+└── README.md
 ```
 
 ---
@@ -56,7 +60,7 @@ pip install pyserial
 ### 1. Synthesize and Flash the FPGA
 
 1. Open **Gowin EDA** and create a new project for the Tang Nano 9K (`GW1NR-LV9`).
-2. Add all `.sv` files from the `rtl/` folder to the **Design** tab.
+2. Add all `.sv` files from the `src/` folder to the **Design** tab.
 3. Add `tang_nano_9k.cst` to the **Physical Constraints** tab.
 4. **Critical:** Go to `Project → Configuration → Synthesize → General` and change the Verilog Language standard from **Verilog 2001** to **SystemVerilog 2017**.
 5. Run **Synthesis** and **Place & Route**.
@@ -66,7 +70,7 @@ pip install pyserial
 
 ### 2. Configure the Python Driver
 
-Open `python/host_driver.py` and set the `SERIAL_PORT` variable to match your system:
+Open `host_driver.py` and set the `SERIAL_PORT` variable to match your system:
 
 | OS | Port Format | Example |
 |---|---|---|
